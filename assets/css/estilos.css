@@ -344,21 +344,24 @@ hr {
 
 
 /* ==========================================================================
-   Imágenes y Contenedores Responsivos (Forzado)
+   Corrección definitiva de contenedor e imágenes en GitHub Pages
    ========================================================================== */
-*, *::before, *::after {
-  box-sizing: border-box;
+.container-lg, .markdown-body, main, .content, article {
+  max-width: 920px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
 }
 
-img, svg, video {
+p, figure, div {
   max-width: 100% !important;
-  height: auto !important;
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 8px;
 }
 
-/* Evita que contenedores o tablas anchas estiren la tarjeta blanca */
-main, .content, .container-lg, .markdown-body {
-  overflow-x: hidden;
+img {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  display: block !important;
+  margin: 1.5rem auto !important;
+  box-sizing: border-box !important;
 }
