@@ -341,3 +341,15 @@ hr {
 .highlight .nb, .highlight .bp { color: #34d399; }
 .highlight .nt { color: #f43f5e; }
 .highlight .err { color: #fda4af; background-color: rgba(225, 29, 72, 0.2); }
+
+
+/* ==========================================================================
+   Imágenes Responsivas
+   ========================================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+}
