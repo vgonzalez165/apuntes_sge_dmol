@@ -344,12 +344,21 @@ hr {
 
 
 /* ==========================================================================
-   Imágenes Responsivas
+   Imágenes y Contenedores Responsivos (Forzado)
    ========================================================================== */
-img {
-  max-width: 100%;
-  height: auto;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, svg, video {
+  max-width: 100% !important;
+  height: auto !important;
   display: block;
   margin: 1.5rem auto;
   border-radius: 8px;
+}
+
+/* Evita que contenedores o tablas anchas estiren la tarjeta blanca */
+main, .content, .container-lg, .markdown-body {
+  overflow-x: hidden;
 }
